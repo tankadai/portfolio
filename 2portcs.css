@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url("/CLASSROOM/Pic3.png");
+    background-size: cover;
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color:#030617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #facc16;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    line-height: 30px;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #facc16;
+}
+.home-content p {
+    font-size: 16px;
+}
+.home-content .btnbox{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btnbox a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 150px;
+height: 100%;
+background: #facc16;
+border: 2px solid ;
+border-radius: 8px;
+font-size: 19px;
+color: black;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 1px;
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    font-size: 10px;
+    filter: brightness(0) invert(1);
+}
