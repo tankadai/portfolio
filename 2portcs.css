@@ -2,30 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
-body{
-    background-image: url('./CLASSROOM/Pic3.png');
-    background-size: cover;
-    color: #ededed;
+    font-family: jost,sans-serif;
 }
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 4%;
     background-color:#030617;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
-.logo{
+.logo a{
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
+}
+.logo span{
+    color: #facc16;
 }
 .navbar a {
 font-size: 18px;
@@ -39,7 +37,40 @@ transition: .3s;
 .navbar a.active{
     color: #facc16;
 }
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 20%;
+    height: 35px;
+    display: flex;
+    margin-left:  220px;
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+}
+
+.search-btn img{
+    height: 100%;
+}
+
 .home{
+    background-image: url('/CLASSROOM/Pic3.png');
+    background-size: cover;
+    color: #ededed;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -53,10 +84,24 @@ transition: .3s;
     font-size: 50px;
     font-weight: 700;
 }
+.home-content h1 span {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+}
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .home-content h3{
     font-size: 20px;
     font-weight: 700;
     color: #facc16;
+    padding-top: 5px;
 }
 .home-content p {
     font-size: 16px;
@@ -98,4 +143,87 @@ letter-spacing: 1px;
     background: transparent;
     font-size: 10px;
     filter: brightness(0) invert(1);
+}
+.container {
+    padding: 30px;
+
+}
+.container h1 {
+    text-align: center;
+    color: #facc16;
+}
+.yuyu {
+    text-align: center;
+}
+.container h3 {
+    color: #facc16;
+}
+.container p {
+    color: antiquewhite;
+}
+.contact {
+    background-color: #111830;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+}
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #111830;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;}
+.left {
+    flex: 1;
+    padding: 20px;
+    padding-left: 100px;
+}
+.right {
+    padding-left: 0 10%;
+    flex: 1;
+    text-align: center;
+}
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('/CLASSROOM/ppp2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.head {
+    font-size: 40px;
+    font-weight: 700;
+    color: #facc16;
+}
+.description {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.larger-font {
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #030617;
+    color: white;
+}
+.footer h2{
+    font-weight: 300;
+}
+.footer p,a {
+    font-weight: 150;
+    font-size: 18px;
 }
