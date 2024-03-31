@@ -68,7 +68,7 @@ transition: .3s;
 }
 
 .home{
-    background-image: url('/CLASSROOM/Pic3.png');
+    background-image: url('Pic3.png');
     background-size: cover;
     color: #ededed;
     display: flex;
@@ -195,7 +195,7 @@ html, body {
     border: 5px solid white;
     border-radius: 50%;
     margin: 0 auto;
-    background-image: url('/CLASSROOM/ppp2.jpg');
+    background-image: url('ppp2.jpg');
     background-size: cover;
     background-position: center;
 }
