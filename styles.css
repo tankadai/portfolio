@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: jost,sans-serif;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 4%;
+  background-color:#030617;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo a{
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+.logo span{
+  color: #facc16;
+}
+.navbar a {
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+  color: #facc16;
+}
+.home{
+  background-image: url('mypic.png');
+  background-size: cover;
+  color: #ededed;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  line-height: 30px;
+}
+.home-content{
+  max-width: 600px;
+}
+.home-content h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+.home-content h1 span {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+.home-content h3{
+  font-size: 20px;
+  font-weight: 700;
+  color: #facc16;
+  padding-top: 5px;
+}
+.home-content p {
+  font-size: 16px;
+}
+.home-content .btnbox{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+.btnbox a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 150px;
+height: 100%;
+background: #facc16;
+border: 2px solid ;
+border-radius: 8px;
+font-size: 19px;
+color: black;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 1px;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: black;
+  color: white;
+  padding: 8px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+main {
+  margin-top: 75px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.project-list {
+  margin-top: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+.project-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.project-description {
+  font-size: 16px;
+}
+.project-details {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.contact-form {
+  margin-left: 45px;
+  margin-top: 75px;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.form-group textarea {
+  height: 150px;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
